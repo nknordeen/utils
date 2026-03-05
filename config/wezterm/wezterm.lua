@@ -229,15 +229,15 @@ end)
 wezterm.on('gui-startup', function(cmd)
     -- Start with a main window
     local fintechWFTab, _, window = wezterm.mux.spawn_window(cmd or {
-        cwd = '/Users/nnordeen/development/go/src/github.com/fancom-finance/fintech-workflows'
+        cwd = '/path/to/place'
     })
-    fintechWFTab:set_title('fintech-workflows')
+    fintechWFTab:set_title('title1')
 
 
     local dcsTab, dcsPane, dcsWindow = window:spawn_tab {
-        cwd = '/Users/nnordeen/development/tools/config-registry'
+        cwd = '/path/2/place'
     }
-    dcsTab:set_title('dcs')
+    dcsTab:set_title('title2')
 
     window:spawn_tab {
         cwd = "~"
