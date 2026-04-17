@@ -1,9 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/lib:/usr/local/bin:$HOME/development/go-build-scripts:$PATH
 
-# Used for product-finding projects
 export IS_LOCAL_DEVELOPMENT=true
-export NODE_EXTRA_CA_CERTS=~/Library/Keychains/Cisco_Umbrella_Root_CA.cer
+
 # golang
 export GOPATH=$HOME/development/go
 export GOBIN=$GOPATH/bin
